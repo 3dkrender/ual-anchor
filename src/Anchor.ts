@@ -1,16 +1,21 @@
+import { APIClient, FetchProvider } from '@greymass/eosio'
 import {
-  Authenticator, ButtonStyle, Chain,
-  UALError, UALErrorType, User
+  Authenticator,
+  ButtonStyle,
+  Chain,
+  UALError,
+  UALErrorType,
+  User
 } from 'universal-authenticator-library'
 
-import AnchorLink from 'anchor-link'
-import { JsonRpc } from 'eosjs'
-import { APIClient, FetchProvider } from '@greymass/eosio'
-import { Name } from './interfaces'
-import { AnchorUser } from './AnchorUser'
 import { AnchorLogo } from './AnchorLogo'
+import { AnchorUser } from './AnchorUser'
+import { JsonRpc } from 'eosjs'
+import { Name } from './interfaces'
 import { UALAnchorError } from './UALAnchorError'
-import AnchorLinkBrowserTransport from 'anchor-link-browser-transport'
+
+declare var AnchorLink: any;
+declare var AnchorLinkBrowserTransport: any;
 
 export interface UALAnchorOptions {
   // The app name, required by anchor-link. Short string identifying the app
