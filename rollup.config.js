@@ -15,7 +15,6 @@ const license = fs.readFileSync('LICENSE').toString('utf-8').trim()
 const banner = `
 /**
  * UAL Anchor v${pkg.version}
- * ${pkg.homepage}
  * 
  * - Pack by 3DKRender Team
  * 
